@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mixercontrol>
+    <versioncontrol value="1.01">
+    </versioncontrol>
+    <!-- These are the initial mixer settings -->
+    <kctl name="Audio_Speaker_class_Switch" value="CLASSAB" />
+  	<!--headphone output-->
+    <path name="headphone_output" value="turnon">
+        <kctl name="Audio_Amp_R_Switch" value="On" />
+        <kctl name="Audio_Amp_L_Switch" value="On" />
+    </path>
+    <path name="headphone_output" value="turnoff">
+        <kctl name="Audio_Amp_R_Switch" value="Off" />
+        <kctl name="Audio_Amp_L_Switch" value="Off" />
+    </path>
+    <!--receiver output-->
+    <path name="receiver_output" value="turnon">
+        <kctl name="Voice_Amp_Switch" value="On" />
+    </path>
+    <path name="receiver_output" value="turnoff">
+        <kctl name="Voice_Amp_Switch" value="Off" />
+    </path>
+   <!-- 2-in-1 speaker output-->
+    <path name="two_in_one_speaker_output" value="turnon">
+        <kctl name="Speaker_Amp_Switch" value="On" />
+        <kctl name="Audio_Speaker_class_Switch" value="CLASSAB" />
+    </path>
+    <path name="two_in_one_speaker_output" value="turnoff">
+        <kctl name="Audio_Speaker_class_Switch" value="RECEIVER" />
+        <kctl name="Speaker_Amp_Switch" value="Off" />
+    </path>
+   <!--speaker output-->
+    <path name="speaker_output" value="turnon">
+        <kctl name="Speaker_Amp_Switch" value="On" />
+    </path>
+    <path name="speaker_output" value="turnoff">
+        <kctl name="Speaker_Amp_Switch" value="Off" />
+    </path>
+    <!--headhpone_speaker output-->
+    <path name="headphoneSpeaker_output" value="turnon">
+        <kctl name="Headset_Speaker_Amp_Switch" value="On" />
+    </path>
+    <path name="headphoneSpeaker_output" value="turnoff">
+        <kctl name="Headset_Speaker_Amp_Switch" value="Off" />
+    </path>
+   <!--speaker output-->
+    <path name="maxim_speaker_output" value="turnon">
+        <kctl name="Spk_Enable" value="On" />
+    </path>
+    <path name="maxim_speaker_output" value="turnoff">
+        <kctl name="Spk_Enable" value="Off" />
+    </path>
+    <!--headhpone_speaker output-->
+    <path name="maxim_headphoneSpeaker_output" value="turnon">
+        <kctl name="Spk_Enable" value="On" />
+        <kctl name="Audio_Amp_R_Switch" value="On" />
+        <kctl name="Audio_Amp_L_Switch" value="On" />
+    </path>
+    <path name="maxim_headphoneSpeaker_output" value="turnoff">
+        <kctl name="Audio_Amp_R_Switch" value="Off" />
+        <kctl name="Audio_Amp_L_Switch" value="Off" />
+        <kctl name="Spk_Enable" value="Off" />
+    </path>
+    <!--external_speaker output-->
+    <path name="ext_speaker_output" value="turnon">
+        <kctl name="Ext_Speaker_Amp_Switch" value="On" />
+    </path>
+    <path name="ext_speaker_output" value="turnoff">
+        <kctl name="Ext_Speaker_Amp_Switch" value="Off" />
+    </path>
+    <!--mic setting-->
+    <path name="builtin_Mic_Mic1" value="turnon">
+        <kctl name="Audio_MicSource1_Setting" value="ADC1" />
+        <kctl name="Audio_ADC_1_Switch" value="On" />
+        <kctl name="Audio_ADC_2_Switch" value="On" />
+        <kctl name="Audio_Preamp1_Switch" value="IN_ADC1" />
+        <kctl name="Audio_Preamp2_Switch" value="IN_ADC1" />
+    </path>
+    <path name="builtin_Mic_Mic1" value="turnoff">
+        <kctl name="Audio_Preamp1_Switch" value="OPEN" />
+        <kctl name="Audio_Preamp2_Switch" value="OPEN" />
+        <kctl name="Audio_ADC_1_Switch" value="Off" />
+        <kctl name="Audio_ADC_2_Switch" value="Off" />
+    </path>
+    <path name="builtin_Mic_Mic1_Inverse" value="turnon">
+        <kctl name="Audio_MicSource1_Setting" value="ADC1" />
+        <kctl name="Audio_ADC_1_Switch" value="On" />
+        <kctl name="Audio_ADC_2_Switch" value="On" />
+        <kctl name="Audio_Preamp1_Switch" value="IN_ADC3" />
+        <kctl name="Audio_Preamp2_Switch" value="IN_ADC3" />
+    </path>
+    <path name="builtin_Mic_Mic1_Inverse" value="turnoff">
+        <kctl name="Audio_Preamp1_Switch" value="OPEN" />
+        <kctl name="Audio_Preamp2_Switch" value="OPEN" />
+        <kctl name="Audio_ADC_1_Switch" value="Off" />
+        <kctl name="Audio_ADC_2_Switch" value="Off" />
+    </path>
+    <path name="builtin_Mic_Mic2" value="turnon">
+        <kctl name="Audio_MicSource1_Setting" value="ADC1" />
+        <kctl name="Audio_ADC_1_Switch" value="On" />
+        <kctl name="Audio_ADC_2_Switch" value="On" />
+        <kctl name="Audio_Preamp1_Switch" value="IN_ADC3" />
+        <kctl name="Audio_Preamp2_Switch" value="IN_ADC3" />
+    </path>
+    <path name="builtin_Mic_Mic2" value="turnoff">
+        <kctl name="Audio_Preamp1_Switch" value="OPEN" />
+        <kctl name="Audio_Preamp2_Switch" value="OPEN" />
+        <kctl name="Audio_ADC_1_Switch" value="Off" />
+        <kctl name="Audio_ADC_2_Switch" value="Off" />
+    </path>
+    <path name="builtin_Mic_Mic2_Inverse" value="turnon">
+        <kctl name="Audio_MicSource1_Setting" value="ADC1" />
+        <kctl name="Audio_ADC_1_Switch" value="On" />
+        <kctl name="Audio_ADC_2_Switch" value="On" />
+        <kctl name="Audio_Preamp1_Switch" value="IN_ADC1" />
+        <kctl name="Audio_Preamp2_Switch" value="IN_ADC1" />
+    </path>
+    <path name="builtin_Mic_Mic2_Inverse" value="turnoff">
+        <kctl name="Audio_Preamp1_Switch" value="OPEN" />
+        <kctl name="Audio_Preamp2_Switch" value="OPEN" />
+        <kctl name="Audio_ADC_1_Switch" value="Off" />
+        <kctl name="Audio_ADC_2_Switch" value="Off" />
+    </path>
+    <path name="builtin_Mic_SingleMic" value="turnon">
+        <kctl name="Audio_MicSource1_Setting" value="ADC1" />
+        <kctl name="Audio_ADC_1_Switch" value="On" />
+        <kctl name="Audio_Preamp1_Switch" value="IN_ADC1" />
+        <kctl name="Audio_Preamp2_Switch" value="IN_ADC1" />
+    </path>
+    <path name="builtin_Mic_SingleMic" value="turnoff">
+        <kctl name="Audio_Preamp1_Switch" value="OPEN" />
+        <kctl name="Audio_Preamp2_Switch" value="OPEN" />
+        <kctl name="Audio_ADC_1_Switch" value="Off" />
+    </path>
+    <path name="builtin_Mic_DualMic" value="turnon">
+        <kctl name="Audio_MicSource1_Setting" value="ADC1" />
+        <kctl name="Audio_ADC_1_Switch" value="On" />
+        <kctl name="Audio_ADC_2_Switch" value="On" />
+        <kctl name="Audio_Preamp1_Switch" value="IN_ADC1" />
+        <kctl name="Audio_Preamp2_Switch" value="IN_ADC3" />
+    </path>
+    <path name="builtin_Mic_DualMic" value="turnoff">
+        <kctl name="Audio_Preamp1_Switch" value="OPEN" />
+        <kctl name="Audio_Preamp2_Switch" value="OPEN" />
+        <kctl name="Audio_ADC_1_Switch" value="Off" />
+        <kctl name="Audio_ADC_2_Switch" value="Off" />
+    </path>
+    <path name="builtin_Mic_BackMic" value="turnon">
+        <kctl name="Audio_MicSource1_Setting" value="ADC1" />
+        <kctl name="Audio_ADC_1_Switch" value="On" />
+        <kctl name="Audio_ADC_2_Switch" value="On" />
+        <kctl name="Audio_Preamp1_Switch" value="IN_ADC3" />
+        <kctl name="Audio_Preamp2_Switch" value="IN_ADC1" />
+    </path>
+    <path name="builtin_Mic_BackMic" value="turnoff">
+        <kctl name="Audio_Preamp1_Switch" value="OPEN" />
+        <kctl name="Audio_Preamp2_Switch" value="OPEN" />
+        <kctl name="Audio_ADC_1_Switch" value="Off" />
+        <kctl name="Audio_ADC_2_Switch" value="Off" />
+    </path>
+    <path name="builtin_Mic_BackMic_Inverse" value="turnon">
+        <kctl name="Audio_MicSource1_Setting" value="ADC1" />
+        <kctl name="Audio_ADC_1_Switch" value="On" />
+        <kctl name="Audio_ADC_2_Switch" value="On" />
+        <kctl name="Audio_Preamp1_Switch" value="IN_ADC1" />
+        <kctl name="Audio_Preamp2_Switch" value="IN_ADC3" />
+    </path>
+    <path name="builtin_Mic_BackMic_Inverse" value="turnoff">
+        <kctl name="Audio_Preamp1_Switch" value="OPEN" />
+        <kctl name="Audio_Preamp2_Switch" value="OPEN" />
+        <kctl name="Audio_ADC_1_Switch" value="Off" />
+        <kctl name="Audio_ADC_2_Switch" value="Off" />
+    </path>
+    <path name="headset_mic_input" value="turnon">
+        <kctl name="Audio_MicSource1_Setting" value="ADC2" />
+        <kctl name="Audio_ADC_1_Switch" value="On" />
+        <kctl name="Audio_ADC_2_Switch" value="On" />
+        <kctl name="Audio_Preamp1_Switch" value="IN_ADC2" />
+        <kctl name="Audio_Preamp2_Switch" value="IN_ADC2" />
+    </path>
+    <path name="headset_mic_input" value="turnoff">
+        <kctl name="Audio_Preamp1_Switch" value="OPEN" />
+        <kctl name="Audio_Preamp2_Switch" value="OPEN" />
+        <kctl name="Audio_ADC_1_Switch" value="Off" />
+        <kctl name="Audio_ADC_2_Switch" value="Off" />
+    </path>
+    <path name="sidetone_switch" value="turnon">
+        <kctl name="Audio_Sidetone_Switch" value="On" />
+    </path>
+    <path name="sidetone_switch" value="turnoff">
+        <kctl name="Audio_Sidetone_Switch" value="Off" />
+    </path>
+	<!--igo mode setting-->
+	<path name="igo-mode-voice-nr-48k-InPhoneCall_HandSet" value="setting">
+		<kctl name="IGO POWER_MODE" value="POWER_MODE_STANDBY" />>
+		<kctl name= "Audio_i2s2_input"  value="On"  />>
+		<kctl name= "Audio_i2s_1_2_sync"  value="On48000"  />>
+		<kctl name= "IGO POWER_MODE" value="POWER_MODE_WORKING" />>
+		<kctl name= "IGO DAI_0_CLK" value="DAI_0_CLK_48K" />>
+		<kctl name= "IGO DAI_0_MODE" value="DAI_0_MODE_SLAVE" />>
+		<kctl name= "IGO DAI_0_DATA_BIT" value="DAI_0_DATA_BIT_32" />>
+		<kctl name= "IGO DMIC_M_CLK_SRC" value="DMIC_M_CLK_SRC_MCLK" />>
+		<kctl name= "IGO MCLK" value="12288" />>
+		<kctl name= "IGO DMIC_M_BCLK" value="1536" />>
+		<kctl name= "IGO UL_RX_PRI" value="UL_RX_PRI_DMIC_M0_N" />>
+		<kctl name= "IGO UL_TX" value="UL_TX_DAI0_TX_L" />>
+		<kctl name= "IGO NR_MODE1_EN" value="NR_MODE1_EN_ENABLE" />>
+		<kctl name= "IGO NR_MODE3_EN" value="NR_MODE3_EN_ENABLE" />>
+		<kctl name= "IGO NR_MODE1_OD" value="NR_MODE1_OD_LVL_1" />>
+		<kctl name= "IGO NR_MODE1_THR" value="NR_MODE1_THR_LVL_0" />>
+
+		<kctl name= "IGO UL_RX_AEC" value="UL_RX_AEC_DAI0_RX_L" />>
+		<kctl name= "IGO AEC_BULK_DLY" value="10" />>
+		<kctl name= "IGO AEC_EN" value="AEC_EN_ENABLE" />>
+		<kctl name= "IGO AES_EN" value="AES_EN_LV_0" />>
+
+		<kctl name= "IGO NR_MODE1_FLOOR" value="NR_MODE1_FLOOR_LVL_0" />>
+		<kctl name= "IGO NR_UL" value="NR_UL_LV_1" />>
+		<kctl name= "IGO AGC_EN" value="AGC_EN_ENABLE" />>
+		<kctl name= "IGO OP_MODE" value="OP_MODE_NR" />>
+
+    </path>
+	<path name="igo-mode-voice-nr-48k-InPhoneCall_HandFree" value="setting">
+		<kctl name="IGO POWER_MODE" value="POWER_MODE_STANDBY" />>
+		<kctl name= "Audio_i2s2_input"  value="On"  />>
+		<kctl name= "Audio_i2s_1_2_sync"  value="On48000"  />>
+		<kctl name= "IGO POWER_MODE" value="POWER_MODE_WORKING" />>
+		<kctl name= "IGO DAI_0_CLK" value="DAI_0_CLK_48K" />>
+		<kctl name= "IGO DAI_0_MODE" value="DAI_0_MODE_SLAVE" />>
+		<kctl name= "IGO DAI_0_DATA_BIT" value="DAI_0_DATA_BIT_32" />>
+		<kctl name= "IGO DMIC_M_CLK_SRC" value="DMIC_M_CLK_SRC_MCLK" />>
+		<kctl name= "IGO MCLK" value="12288" />>
+		<kctl name= "IGO DMIC_M_BCLK" value="1536" />>
+		<kctl name= "IGO UL_RX_PRI" value="UL_RX_PRI_DMIC_M0_N" />>
+		<kctl name= "IGO UL_TX" value="UL_TX_DAI0_TX_L" />>
+		<kctl name= "IGO NR_MODE1_EN" value="NR_MODE1_EN_ENABLE" />>
+		<kctl name= "IGO NR_MODE3_EN" value="NR_MODE3_EN_ENABLE" />>
+		<kctl name= "IGO NR_MODE1_OD" value="NR_MODE1_OD_LVL_0" />>
+		<kctl name= "IGO NR_MODE1_THR" value="NR_MODE1_THR_LVL_3" />>
+
+		<kctl name= "IGO UL_RX_AEC" value="UL_RX_AEC_DAI0_RX_L" />>
+		<kctl name= "IGO AEC_BULK_DLY" value="40" />>
+		<kctl name= "IGO AEC_EN" value="AEC_EN_ENABLE" />>
+		<kctl name= "IGO AES_EN" value="AES_EN_LV_0" />>
+
+		<kctl name= "IGO NR_MODE1_FLOOR" value="NR_MODE1_FLOOR_LVL_0" />>
+		<kctl name= "IGO NR_UL" value="NR_UL_LV_1" />>
+		<kctl name= "IGO AGC_EN" value="AGC_EN_ENABLE" />>
+		<kctl name= "IGO OP_MODE" value="OP_MODE_NR" />>
+
+    </path>
+	<path name="igo-mode-voice-nr-48k-InVoipCall_HandSet" value="setting">
+		<kctl name="IGO POWER_MODE" value="POWER_MODE_STANDBY" />>
+		<kctl name= "Audio_i2s2_input"  value="On"  />>
+		<kctl name= "Audio_i2s_1_2_sync"  value="On48000"  />>
+		<kctl name= "IGO POWER_MODE"  value="POWER_MODE_WORKING"  />>
+		<kctl name= "IGO MCLK"  value="12288"  />>
+		<kctl name= "IGO UL_RX_PRI"  value="UL_RX_PRI_DMIC_M0_N"  />>
+		<kctl name= "IGO UL_TX"  value="UL_TX_DAI0_TX_L"  />>
+		<kctl name= "IGO DMIC_M_CLK_SRC"  value="DMIC_M_CLK_SRC_MCLK" />> 
+		<kctl name= "IGO DMIC_M_BCLK"  value="1536"  />>
+		<kctl name= "IGO DAI_0_CLK"  value="DAI_0_CLK_48K"  />>
+		<kctl name= "IGO DAI_0_MODE"  value="DAI_0_MODE_SLAVE"  />>
+		<kctl name= "IGO DAI_0_DATA_BIT"  value="DAI_0_DATA_BIT_32" />>  
+		<kctl name= "IGO NR_MODE1_EN"  value="NR_MODE1_EN_ENABLE" />>  
+		<kctl name= "IGO NR_MODE3_EN"  value="NR_MODE3_EN_ENABLE" />> 
+		<kctl name= "IGO NR_MODE1_OD"  value="NR_MODE1_OD_LVL_0"  />>
+		<kctl name= "IGO NR_MODE1_THR"  value="NR_MODE1_THR_LVL_0"  />>
+		<kctl name= "IGO NR_MODE1_FLOOR"  value="NR_MODE1_FLOOR_LVL_3" />> 
+		<kctl name= "IGO NR_UL"  value="NR_UL_LV_1"  />>
+		<kctl name= "IGO OP_MODE"  value="OP_MODE_NR" />>
+    </path>
+	<path name="igo-mode-voice-nr-48k-InVoipCall_HandFree" value="setting">
+		<kctl name="IGO POWER_MODE" value="POWER_MODE_STANDBY" />>
+		<kctl name= "Audio_i2s2_input"  value="On"  />>
+		<kctl name= "Audio_i2s_1_2_sync"  value="On48000"  />>
+		<kctl name= "IGO POWER_MODE"  value="POWER_MODE_WORKING"  />>
+		<kctl name= "IGO MCLK"  value="12288"  />>
+		<kctl name= "IGO UL_RX_PRI"  value="UL_RX_PRI_DMIC_M0_N"  />>
+		<kctl name= "IGO UL_TX"  value="UL_TX_DAI0_TX_L"  />>
+		<kctl name= "IGO DMIC_M_CLK_SRC"  value="DMIC_M_CLK_SRC_MCLK" />> 
+		<kctl name= "IGO DMIC_M_BCLK"  value="1536"  />>
+		<kctl name= "IGO DAI_0_CLK"  value="DAI_0_CLK_48K"  />>
+		<kctl name= "IGO DAI_0_MODE"  value="DAI_0_MODE_SLAVE"  />>
+		<kctl name= "IGO DAI_0_DATA_BIT"  value="DAI_0_DATA_BIT_32" />>  
+		<kctl name= "IGO NR_MODE1_EN"  value="NR_MODE1_EN_ENABLE" />>  
+		<kctl name= "IGO NR_MODE3_EN"  value="NR_MODE3_EN_ENABLE" />> 
+		<kctl name= "IGO NR_MODE1_OD"  value="NR_MODE1_OD_LVL_0"  />>
+		<kctl name= "IGO NR_MODE1_THR"  value="NR_MODE1_THR_LVL_0"  />>
+		<kctl name= "IGO NR_MODE1_FLOOR"  value="NR_MODE1_FLOOR_LVL_3" />> 
+		<kctl name= "IGO NR_UL"  value="NR_UL_LV_1"  />>
+		<kctl name= "IGO OP_MODE"  value="OP_MODE_NR" />>
+    </path>
+	<path name="igo-mode-voice-record-bypass-48k-NotInCall" value="setting">
+		<kctl name="IGO POWER_MODE"  value="POWER_MODE_STANDBY"/>>  
+		<kctl name="Audio_i2s2_input"  value="On"  />>  
+		<kctl name="Audio_i2s_1_2_sync"  value="On48000"  />>   
+		<kctl name="IGO POWER_MODE" value="POWER_MODE_WORKING"/>>  
+		<kctl name="IGO MCLK" value="12288"/>>  
+		<kctl name="IGO DMIC_M_BCLK" value="1536"/>>  
+		<kctl name="IGO DMIC_M_CLK_SRC" value="DMIC_M_CLK_SRC_MCLK"/>>  
+		<kctl name="IGO UL_RX_PRI" value="UL_RX_PRI_DMIC_M0_N"/>>  
+		<kctl name="IGO DAI_0_CLK" value="DAI_0_CLK_48K"/>>  
+		<kctl name="IGO DAI_0_MODE" value="DAI_0_MODE_SLAVE"/>>  
+		<kctl name="IGO DAI_0_DATA_BIT" value="DAI_0_DATA_BIT_32"/>>  
+		<kctl name="IGO UL_TX" value="UL_TX_DAI0_TX_L"/>>  
+		<kctl name="IGO SW_BYPASS_EN" value="SW_BYPASS_EN_ENABLE"/>>  
+		<kctl name="IGO OP_MODE" value="OP_MODE_BYPASS" />>  
+
+    </path>
+    <path name="igo-mode-standby" value="setting">
+		<kctl name="Audio_i2s_1_2_sync" value="Off" />>
+		<kctl name="Audio_i2s2_input" value="Off" />>
+		<kctl name="IGO POWER_MODE" value="POWER_MODE_STANDBY" />>
+    </path>
+   <!--mic1 type setting-->
+    <path name="Mic1TypeACCMode" value="setting">
+        <kctl name="Audio_MIC1_Mode_Select" value="ACCMODE" />>
+    </path>
+    <path name="Mic1TypeDCCMode" value="setting">
+        <kctl name="Audio_MIC1_Mode_Select" value="DCCMODE" />>
+    </path>
+    <path name="Mic1TypeDMICMode" value="setting">
+        <kctl name="Audio_MIC1_Mode_Select" value="DMIC" />>
+    </path>
+    <path name="Mic1TypeDCCECMDIFFMode" value="setting">
+        <kctl name="Audio_MIC1_Mode_Select" value="DCCECMDIFFMODE" />>
+    </path>
+    <path name="Mic1TypeDCCECMSINGLEMode" value="setting">
+        <kctl name="Audio_MIC1_Mode_Select" value="DCCECMSINGLEMODE" />>
+    </path>
+   <!--mic2 type setting-->
+    <path name="Mic2TypeACCMode" value="setting">
+        <kctl name="Audio_MIC2_Mode_Select" value="ACCMODE" />>
+    </path>
+    <path name="Mic2TypeDCCMode" value="setting">
+        <kctl name="Audio_MIC2_Mode_Select" value="DCCMODE" />>
+    </path>
+    <path name="Mic2TypeDMICMode" value="setting">
+        <kctl name="Audio_MIC2_Mode_Select" value="DMIC" />>
+    </path>
+    <path name="Mic2TypeDCCECMDIFFMode" value="setting">
+        <kctl name="Audio_MIC2_Mode_Select" value="DCCECMDIFFMODE" />>
+    </path>
+    <path name="Mic2TypeDCCECMSINGLEMode" value="setting">
+        <kctl name="Audio_MIC2_Mode_Select" value="DCCECMSINGLEMODE" />>
+    </path>
+   <!--mic3 type setting-->
+    <path name="Mic3TypeACCMode" value="setting">
+        <kctl name="Audio_MIC3_Mode_Select" value="ACCMODE" />>
+    </path>
+    <path name="Mic3TypeDCCMode" value="setting">
+        <kctl name="Audio_MIC3_Mode_Select" value="DCCMODE" />>
+    </path>
+    <path name="Mic3TypeDMICMode" value="setting">
+        <kctl name="Audio_MIC3_Mode_Select" value="DMIC" />>
+    </path>
+    <path name="Mic3TypeDCCECMDIFFMode" value="setting">
+        <kctl name="Audio_MIC3_Mode_Select" value="DCCECMDIFFMODE" />>
+    </path>
+    <path name="Mic3TypeDCCECMSINGLEMode" value="setting">
+        <kctl name="Audio_MIC3_Mode_Select" value="DCCECMSINGLEMODE" />>
+    </path>
+   <!--mic4 type setting-->
+    <path name="Mic4TypeACCMode" value="setting">
+        <kctl name="Audio_MIC4_Mode_Select" value="ACCMODE" />>
+    </path>
+    <path name="Mic4TypeDCCMode" value="setting">
+        <kctl name="Audio_MIC4_Mode_Select" value="DCCMODE" />>
+    </path>
+    <path name="Mic4TypeDMICMode" value="setting">
+        <kctl name="Audio_MIC4_Mode_Select" value="DMIC" />>
+    </path>
+    <path name="Mic4TypeDCCECMDIFFMode" value="setting">
+        <kctl name="Audio_MIC4_Mode_Select" value="DCCECMDIFFMODE" />>
+    </path>
+    <path name="Mic4TypeDCCECMSINGLEMode" value="setting">
+        <kctl name="Audio_MIC4_Mode_Select" value="DCCECMSINGLEMODE" />>
+    </path>
+    <path name="Mic_Setting_Inverse" value="setting">
+        <kctl name="Audio_Preamp1_Switch" value="IN_ADC3" />>
+        <kctl name="Audio_Preamp2_Switch" value="IN_ADC1" />>
+    </path>
+    <path name="Mic_Setting_NoInverse" value="setting">
+        <kctl name="Audio_Preamp1_Switch" value="IN_ADC1" />>
+        <kctl name="Audio_Preamp2_Switch" value="IN_ADC3" />>
+    </path>
+</mixercontrol>

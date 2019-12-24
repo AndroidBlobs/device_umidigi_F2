@@ -1,0 +1,2 @@
+etc/permissions/com.nxp.nfc.xml
+framework/com.nxp.nfc.jar
